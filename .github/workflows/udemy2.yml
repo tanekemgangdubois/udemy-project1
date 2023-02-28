@@ -1,4 +1,4 @@
-name: udemy-project1
+name: udemy-project2
 on: push
 jobs:
   Lint:
