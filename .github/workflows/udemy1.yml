@@ -1,0 +1,22 @@
+name: udemy-project1
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      #this make sure our code is download in the runner machine
+      - name: Get code
+        uses: actions/checkout@v3
+      #install dependencies
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: test code
+        run: npm run test
+      - name: build
+        run: npm run build
+      - name: deploy code
+        run: echo "deploying...."
+    
+ 
