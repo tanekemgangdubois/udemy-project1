@@ -17,6 +17,6 @@ jobs:
       - name: build
         run: npm run build
       - name: deploy code
-        rqun: echo "deploying...."
+        run: echo "deploying...."
     
  
