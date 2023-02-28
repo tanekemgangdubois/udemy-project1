@@ -1,4 +1,4 @@
-name: udemy-project1
+name: udemy-dispatch
 on: workflow_dispatch
 jobs:
   deploy:
