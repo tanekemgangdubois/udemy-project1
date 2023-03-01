@@ -36,13 +36,12 @@ jobs:
         run: npm ci
       - name: build
         run: npm run build
+        #create an artifact that we can download
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           name: dist-files
-          path: |
-            dist
-            package.json
+          path: dist
       - name: deploy code
         run: echo "deploying...."
     
