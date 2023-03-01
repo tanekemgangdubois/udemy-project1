@@ -44,5 +44,15 @@ jobs:
           path: dist
       - name: deploy code
         run: echo "deploying...."
-    
- 
+  download:
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: get build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-files
+      - name: Output contents
+        run: ls
+          
+
