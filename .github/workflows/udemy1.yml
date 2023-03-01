@@ -4,7 +4,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      #this make sure our code is download in the runner machine
+      #this make sure our codjje is download in the runner machine
       - name: Get code
         uses: actions/checkout@v3
       #install dependencies
